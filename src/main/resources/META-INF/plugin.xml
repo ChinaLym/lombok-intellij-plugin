@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <idea-plugin url="https://github.com/mplushnikov/lombok-intellij-plugin">
-  <id>Lombook Plugin</id>
-  <name>Lombok</name>
+  <id>Shoulder Lombook Plugin</id>
+  <name>Shoulder Lombok</name>
   <vendor url="https://github.com/mplushnikov/lombok-intellij-plugin" email="lombokplugin@plushnikov.de">Michail
     Plushnikov
   </vendor>
-  <version>XXX</version>
+  <version>0.0.1</version>
 
-  <idea-version since-build="190.00"/>
+  <idea-version since-build="192.6603.27" until-build="192.6603.29"/>
 
   <description><![CDATA[ Description will be added by gradle build]]></description>
   <category>Tools Integration</category>
@@ -49,6 +49,7 @@
     <applicationService serviceImplementation="de.plushnikov.intellij.plugin.processor.clazz.log.Log4jProcessor"/>
     <applicationService serviceImplementation="de.plushnikov.intellij.plugin.processor.clazz.log.Log4j2Processor"/>
     <applicationService serviceImplementation="de.plushnikov.intellij.plugin.processor.clazz.log.Slf4jProcessor"/>
+    <applicationService serviceImplementation="de.plushnikov.intellij.plugin.processor.clazz.log.SLogProcessor"/>
     <applicationService serviceImplementation="de.plushnikov.intellij.plugin.processor.clazz.log.XSlf4jProcessor"/>
     <applicationService serviceImplementation="de.plushnikov.intellij.plugin.processor.clazz.log.CommonsLogProcessor"/>
     <applicationService serviceImplementation="de.plushnikov.intellij.plugin.processor.clazz.log.JBossLogProcessor"/>

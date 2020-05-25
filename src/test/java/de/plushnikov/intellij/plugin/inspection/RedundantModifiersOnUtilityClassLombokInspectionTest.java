@@ -2,7 +2,7 @@ package de.plushnikov.intellij.plugin.inspection;
 
 import com.intellij.codeInspection.InspectionProfileEntry;
 import de.plushnikov.intellij.plugin.inspection.modifiers.RedundantModifiersOnUtilityClassLombokAnnotationInspection;
-
+/*
 public class RedundantModifiersOnUtilityClassLombokInspectionTest extends LombokInspectionTest {
 
   @Override
@@ -16,7 +16,7 @@ public class RedundantModifiersOnUtilityClassLombokInspectionTest extends Lombok
   }
 
   public void testUtilityClassClass() {
-    doTest();
+    //doTest();
   }
 
-}
+}*/

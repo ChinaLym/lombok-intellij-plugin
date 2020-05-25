@@ -4,16 +4,12 @@ plugins {
   id "com.github.ManifestClasspath" version "0.1.0-RELEASE"
 }
 
-repositories {
-  jcenter()
-  mavenCentral()
-  maven { url "https://www.jitpack.io" }
+allprojects {
+  repositories {
+    mavenLocal()
+    maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
+  }
 }
-// Fix Bug https://github.com/jitpack/jitpack.io/issues/3973
-project.repositories.removeAll {
-  it instanceof MavenArtifactRepository && it.url.toString() == 'https://jitpack.io'
-}
-
 
 apply plugin: 'java'
 apply plugin: 'idea'
@@ -84,8 +80,8 @@ configurations {
 }
 
 dependencies {
-  lombok group: 'org.projectlombok', name: 'lombok', version: '1.18.12', classifier: 'sources', ext: 'jar'
-
+  lombok group: 'org.shoulder', name: 'shoulder-lombok', version: '0.0.1', classifier: 'sources', ext: 'jar'
+  compile files('lib/shoulder-lombok-0.0.1.jar')
   testImplementation("junit:junit:4.13")
   testImplementation("org.mockito:mockito-core:3.3.1")
   testRuntimeOnly("org.junit.vintage:junit-vintage-engine:5.6.0")

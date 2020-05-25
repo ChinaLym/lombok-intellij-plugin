@@ -1,3 +1,4 @@
+/*
 package de.plushnikov.intellij.plugin.inspection;
 
 import com.intellij.codeInspection.InspectionProfileEntry;
@@ -16,7 +17,8 @@ public class RedundantModifiersOnValueLombokInspectionTest extends LombokInspect
   }
 
   public void testValueClass() {
-    doTest();
+    //doTest();
   }
 
 }
+*/

@@ -1,6 +1,6 @@
 lombok-intellij-plugin [![Donate](https://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=3F9HXD7A2SMCN)
 ======================
-[![Build Status][badge-travis-img]][badge-travis] [![Code Coverage](https://img.shields.io/codecov/c/github/mplushnikov/lombok-intellij-plugin/master.svg)](https://codecov.io/github/mplushnikov/lombok-intellij-plugin?branch=master)
+[![Build Status][badge-travis-img]][badge-travis] [![Code Coverage](https://img.shields.io/codecov/c/github/chinaLym/lombok-intellij-plugin/master.svg)](https://codecov.io/github/chinaLym/lombok-intellij-plugin?branch=master)
 
 [![JetBrains Plugins](https://img.shields.io/jetbrains/plugin/v/6317-lombok-plugin.svg)](https://plugins.jetbrains.com/plugin/6317-lombok-plugin)
 [![Downloads](https://img.shields.io/jetbrains/plugin/d/6317-lombok-plugin.svg)](https://plugins.jetbrains.com/plugin/6317-lombok-plugin)
@@ -50,7 +50,7 @@ Features / Supports
 - [@ToString](http://projectlombok.org/features/ToString.html)
 - [@EqualsAndHashCode](http://projectlombok.org/features/EqualsAndHashCode.html)
 - [@AllArgsConstructor, @RequiredArgsConstructor and @NoArgsConstructor](http://projectlombok.org/features/Constructor.html)
-- [@Log, @Log4j, @Log4j2, @Slf4j, @XSlf4j, @CommonsLog, @JBossLog, @Flogger, @CustomLog](http://projectlombok.org/features/Log.html)
+- [@SLog, @Log, @Log4j, @Log4j2, @Slf4j, @XSlf4j, @CommonsLog, @JBossLog, @Flogger, @CustomLog](http://projectlombok.org/features/Log.html)
 - [@Data](https://projectlombok.org/features/Data.html)
 - [@Builder](https://projectlombok.org/features/Builder.html)
 - [@Singular](https://projectlombok.org/features/Builder.html#singular)
@@ -76,7 +76,7 @@ Installation
 - Using IDE built-in plugin system on MacOs:
   - <kbd>Preferences</kbd> > <kbd>Settings</kbd> > <kbd>Plugins</kbd> > <kbd>Browse repositories...</kbd> > <kbd>Search for "lombok"</kbd> > <kbd>Install Plugin</kbd>
 - Manually:
-  - Download the [latest release](https://github.com/mplushnikov/lombok-intellij-plugin/releases/latest) and install it manually using <kbd>Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>Install plugin from disk...</kbd>
+  - Download the [latest release](https://github.com/chinaLym/lombok-intellij-plugin/releases/latest) and install it manually using <kbd>Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>Install plugin from disk...</kbd>
 
 Restart IDE.
 
@@ -100,11 +100,11 @@ repositories {
 }
 
 dependencies {
-	compileOnly 'org.projectlombok:lombok:1.18.12'
-	annotationProcessor 'org.projectlombok:lombok:1.18.12'
+	compileOnly 'org.shoulder:shoulder-lombok:0.0.1'
+	annotationProcessor 'org.shoulder:shoulder-lombok:0.0.1'
 
-	testCompileOnly 'org.projectlombok:lombok:1.18.12'
-	testAnnotationProcessor 'org.projectlombok:lombok:1.18.12'
+	testCompileOnly 'org.shoulder:shoulder-lombok:0.0.1'
+	testAnnotationProcessor 'org.shoulder:shoulder-lombok:0.0.1'
 }
 ```
 
@@ -113,9 +113,9 @@ In your `pom.xml`:
 ```xml
 <dependencies>
 	<dependency>
-		<groupId>org.projectlombok</groupId>
-		<artifactId>lombok</artifactId>
-		<version>1.18.12</version>
+		<groupId>org.shoulder</groupId>
+		<artifactId>shoulder-lombok</artifactId>
+		<version>0.0.1</version>
 		<scope>provided</scope>
 	</dependency>
 </dependencies>
@@ -124,7 +124,7 @@ In your `pom.xml`:
 ##### Ivy
 In your `ivy.xml`:
 ```xml
-<dependency org="org.projectlombok" name="lombok" rev="1.18.12" conf="build" />
+<dependency org="org.shoulder" name="shoulder-lombok" rev="0.0.1" conf="build" />
 ```
 
 IntelliJ and Eclipse compiler
@@ -142,6 +142,7 @@ Developed By
 [**@mplushnikov** Michail Plushnikov](https://github.com/mplushnikov)
 
 **Contributors**
+- [**@chinaLym** chinaLym](https://github.com/chinaLym)
 - [**@adamarmistead** adamarmistead](https://github.com/adamarmistead)
 - [**@akozlova** Anna Kozlova](https://github.com/akozlova)
 - [**@alanachtenberg** Alan Achtenberg](https://github.com/alanachtenberg)
@@ -183,11 +184,11 @@ License
 -------
 Copyright (c) 2011-2020 Michail Plushnikov. See the [LICENSE](./LICENSE) file for license rights and limitations (BSD).
 
-[badge-gitter-img]:       https://badges.gitter.im/mplushnikov/lombok-intellij-plugin.svg
-[badge-gitter]:           https://gitter.im/mplushnikov/lombok-intellij-plugin
-[badge-travis-img]:       https://travis-ci.org/mplushnikov/lombok-intellij-plugin.svg
-[badge-travis]:           https://travis-ci.org/mplushnikov/lombok-intellij-plugin
-[badge-coveralls-img]:    https://coveralls.io/repos/github/mplushnikov/lombok-intellij-plugin/badge.svg?branch=master
-[badge-coveralls]:        https://coveralls.io/github/mplushnikov/lombok-intellij-plugin?branch=master
+[badge-gitter-img]:       https://badges.gitter.im/chinaLym/lombok-intellij-plugin.svg
+[badge-gitter]:           https://gitter.im/chinaLym/lombok-intellij-plugin
+[badge-travis-img]:       https://travis-ci.org/chinaLym/lombok-intellij-plugin.svg
+[badge-travis]:           https://travis-ci.org/chinaLym/lombok-intellij-plugin
+[badge-coveralls-img]:    https://coveralls.io/repos/github/chinaLym/lombok-intellij-plugin/badge.svg?branch=master
+[badge-coveralls]:        https://coveralls.io/github/chinaLym/lombok-intellij-plugin?branch=master
 [badge-paypal-img]:       https://img.shields.io/badge/donate-paypal-yellow.svg
 [badge-paypal]:           https://www.paypal.me/mplushnikov
