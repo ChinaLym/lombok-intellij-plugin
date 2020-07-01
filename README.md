@@ -15,5 +15,5 @@ Provides support for lombok annotations to write great Java code with IntelliJ I
 
 ![demo](shoulder-lombok-SLog.png)
 
-与 lombok-idea-plugin 协议保持一致：MIT 许可
+本项目遵守 lombok-idea-plugin 的开源协议，与其保持一致（BSD 许可，商业友好）
 
